@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meditation Gong</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Meditation Gong</h1>
+    <div class="input-container">
+        <label for="interval">Interval (seconds):</label>
+        <input type="number" id="interval" placeholder="Enter interval in seconds">
+    </div>
+    <div class="input-container">
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" placeholder="Enter duration in minutes">
+    </div>
+    <div class="button-container">
+        <button class="start-button" id="startButton">Start Meditation</button>
+        <button class="stop-button" id="stopButton" style="display: none;">Stop Meditation</button>
+    </div>
+    <div id="intervalCountdown"></div>
+    <div id="durationCountdown"></div>
+    <audio id="gong" src="gong.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
